@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@layer base {
+    :root {
+        --background: 0 0% 0%;
+        --foreground: 0 0% 100%;
+    }
+
+    body {
+        background-color: #000000;
+        color: #ffffff;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::selection {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+    }
+}
+
+@layer utilities {
+    .text-gradient {
+        background: linear-gradient(
+            to right,
+            #ffffff,
+            rgba(255, 255, 255, 0.7)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
