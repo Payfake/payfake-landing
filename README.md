@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Payfake Landing
+
+The official landing page for [Payfake](https://github.com/payfake/payfake-api) — a self-hostable, Paystack-compatible payment simulator for African developers.
+
+## Overview
+
+This is the marketing landing page for Payfake, built with:
+
+- **Next.js 15** (App Router)
+- **Tailwind CSS** (Black/white theme)
+- **Framer Motion** (Heavy animations)
+- **TypeScript**
+
+## Features
+
+-  **Animated Hero** — Floating cards, magnetic buttons, parallax scrolling
+-  **Features Grid** — 9 feature cards with hover animations
+-  **Code Demo** — Syntax-highlighted code examples in multiple languages
+-  **Magnetic CTA** — Interactive buttons with spring physics
+-  **Responsive** — Mobile-first design with hamburger menu
+-  **Loader** — Spinning zoom animation on page load
+-  **Scroll Progress** — Thin progress bar at top
+-  **SEO Ready** — OG images, sitemap, robots.txt
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- bun or npm
+
+### Installation
 
 ```bash
+git clone https://github.com/payfake/payfake-landing.git
+cd payfake-landing
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+payfake-landing/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── globals.css
+│   ├── opengraph-image.tsx
+│   ├── sitemap.ts
+│   └── robots.ts
+├── components/
+│   ├── hero/
+│   ├── features/
+│   ├── code-demo/
+│   ├── cta/
+│   ├── footer/
+│   ├── header/
+│   ├── loader/
+│   ├── scroll-progress/
+│   └── ui/
+├── hooks/
+│   └── use-smooth-scroll.ts
+└── public/
+    └── logo.JPG
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Deployed on Vercel at [payfake.co](https://payfake.co)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+vercel --prod
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Related
 
-## Deploy on Vercel
+- [Payfake API](https://github.com/payfake/payfake-api)
+- [Payfake Docs](https://github.com/payfake/payfake-docs)
+- [Payfake JS SDK](https://github.com/payfake/payfake-js)
+- [Payfake Python SDK](https://github.com/payfake/payfake-python)
+- [Payfake Go SDK](https://github.com/payfake/payfake-go)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT © [Payfake](https://github.com/payfake)
